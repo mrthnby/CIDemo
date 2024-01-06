@@ -44,7 +44,7 @@ public class NextPrime {
       return number;
     } else{
       while (!isPrime(number)){
-        number ++
+        number ++;
       }
     }
     return number;
