@@ -65,11 +65,11 @@ public class NextPrimeTest {
     assertEquals("-1 -> 2 ", 2, NextPrime.nextPrime(-1));
     assertEquals("0 -> 2 ", 2, NextPrime.nextPrime(0));
     assertEquals("2 -> 2 ", 2, NextPrime.nextPrime(2));
-    assertEquals("3 -> 3 ", 2, NextPrime.nextPrime(3));
-    assertEquals("4 -> 5 ", 2, NextPrime.nextPrime(4));
-    assertEquals("5 -> 5 ", 2, NextPrime.nextPrime(5));
-    assertEquals("257 -> 257 ", 2, NextPrime.nextPrime(257));
-    assertEquals("258 -> 263 ", 2, NextPrime.nextPrime(258));
+    assertEquals("3 -> 3 ", 3, NextPrime.nextPrime(3));
+    assertEquals("4 -> 5 ", 5, NextPrime.nextPrime(4));
+    assertEquals("5 -> 5 ", 5, NextPrime.nextPrime(5));
+    assertEquals("257 -> 257 ", 257, NextPrime.nextPrime(257));
+    assertEquals("258 -> 263 ", 263, NextPrime.nextPrime(258));
     // ToDo: implement this test function to check `nextPrime`
     System.out.println("passed");
   }
