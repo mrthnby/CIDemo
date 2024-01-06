@@ -39,7 +39,15 @@ public class NextPrime {
   public static int nextPrime(int number) {
     // ToDo: implement the unit test first
     // ToDo: add code to get the next prime number
-    return 0;
+    if (number <= 2) return 2;
+    if (isPrime(number)){
+      return number;
+    } else{
+      while (!isPrime(number)){
+        number ++
+      }
+    }
+    return number;
   }
 
   // --------------------------------------------------------------- //
